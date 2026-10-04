@@ -1,0 +1,104 @@
+/* Sivun perustyyli */
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+  
+}
+
+/* Lisää tyylit otsikoille */
+h1,h2,h3{
+    font-family: Verdana, Arial,  sans-serif;
+}
+
+h2, h3 {
+    color:#315c4c;
+}
+
+/* Sivun yläosa */
+header {
+    background-color: #315c4c;
+    color: white;
+    text-align: left;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/* Lisää tyylit navigaatiolle */
+nav {
+    text-align: left;
+    margin-top: 25px;
+}
+
+/* Lisää tyylit navigaation listalle */
+nav ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Lisää tyylit navigaation listan elementeille */
+nav li {
+    margin: 5px 0;
+}
+
+/* Lisää tyylit navigaation linkeille */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Lisää tyylit navigaation linkkien hover-tilalle */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Lisää tyylit pääsisällölle */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Lisää tyylit artikkeleille */
+article {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Lisää tyylit osioille */
+section {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* Lisää tyylit linkeille */
+a {
+    color: #315c4c;
+    font-weight: bold;
+}
+
+/* Lisää tyylit linkkien hover-tilalle */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Lisää tyylit footerille */
+footer {
+    background-color: #315c4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
