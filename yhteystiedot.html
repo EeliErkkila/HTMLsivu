@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yhteystiedot</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- Sivun yläosa -->
     <header>
-        <h1>Yhteystiedot</h1>
-        <p>Ota meihin yhteyttä!</p>
-<!-- Navigaatiopalkki -->
-        <nav>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Unelmamatkat logo" width="1536" height="1024" fetchpriority="high">
+            </a>
+
+
+            <!-- Navigaatiopalkki -->
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="kohteet.html">Kohteet</a></li>
@@ -20,10 +26,26 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- Sivun pääsisältö -->
+    <main>
+        <section class="yhteystiedot">
+            <h2>Yhteystiedot</h2>
+            <p>
+                Ota yhteyttä meihin, jos sinulla on kysyttävää
+                tai haluat lisätietoja palveluistamme.
+            </p>
+            <ul>
+                <li>Sähköposti: <a href="mailto:info@unelmamatkat.fi">info@unelmamatkat.fi</a></li>
+                <li>puhelin: <a href="tel:+358123456789">+358 40 962 6789</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Eeli Erkkilä. Unelmamatkat</p>
     </footer>
-    
+
 </body>
+
 </html>

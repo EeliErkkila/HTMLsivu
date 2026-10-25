@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matkavinkit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+    <!-- Sivun yläosa -->
     <header>
-        <h1>Matkavinkit</h1>
-<!-- Navigaatiopalkki -->
-        <nav>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Unelmamatkat logo" width="1536" height="1024" fetchpriority="high">
+            </a>
+
+
+            <!-- Navigaatiopalkki -->
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="kohteet.html">Kohteet</a></li>
@@ -20,10 +26,29 @@
             </ul>
         </nav>
     </header>
+    <!-- Sivun pääsisältö -->
+    <main>
+        <section class="matkavinkit">
+            <h2>Matkavinkit</h2>
+            <p>
+                Tässä osiossa jaamme hyödyllisiä matkavinkkejä
+                ja neuvoja, jotka tekevät matkastasi sujuvamman
+                ja nautinnollisemman.
+            </p>
+            <ul>
+                <li>Suunnittele matkasi etukäteen ja tee tarvittavat varaukset.</li>
+                <li>Pakkaa kevyesti ja ota mukaan vain välttämättömät tavarat.</li>
+                <li>Ota selvää paikallisista tavoista ja kulttuurista.</li>
+                <li>Pidä huolta turvallisuudestasi ja seuraa paikallisia ohjeita.</li>
+                <li>Muista nauttia matkasta ja olla avoin uusille kokemuksille.</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Eeli Erkkilä. Unelmamatkat</p>
     </footer>
-    
+
 </body>
+
 </html>

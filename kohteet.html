@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kohteet</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+    <!-- Sivun yläosa -->
     <header>
-        <h1>Kohteet</h1>
-<!-- Navigaatiopalkki -->
-        <nav>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Unelmamatkat logo" width="1536" height="1024" fetchpriority="high">
+            </a>
+
+
+            <!-- Navigaatiopalkki -->
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="kohteet.html">Kohteet</a></li>
@@ -21,8 +27,77 @@
         </nav>
     </header>
 
+    <!-- Sivun pääsisältö -->
+    <main class="kohdesivu">
+
+        <!-- Lake Como -->
+        <article class="kohde-esittely" id="lakecomo">
+            <figure>
+                <img src="images/lakecomo.jpg" alt="Lakecomo" width="4000" height="3000">
+            </figure>
+
+            <div class="kohde-teksti">
+                <h1>Lake Como, Italia</h1>
+                <p>
+                    Lake Como on kaunis järvi Pohjois-Italiassa
+                    alppien juurella. Alue tunnetaan upeista
+                    maisemistaan ja viehättävistä pienistä kylistä.
+                </p>
+                <p>
+                    Matkailija voi tutustua järven ympärillä
+                    sijaitseviin kyliin, tehdä veneretkiä
+                    ja nauttia italialaisesta ruoasta.
+                </p>
+            </div>
+        </article>
+
+        <!-- Lauterbrunnen -->
+        <article class="kohde-esittely" id="lauterbrunnen">
+            <figure>
+                <img src="images/lauterbrunnen.jpg" alt="Lauterbrunnen" width="4000" height="3000">
+            </figure>
+
+            <div class="kohde-teksti">
+                <h2>Lauterbrunnen, Sveitsi</h2>
+                <p>
+                    Lauterbrunnen on kaunis kylä Sveitsin
+                    alpeilla. Se tunnetaan korkeista vuorista,
+                    vesiputouksista ja luonnostaan.
+                </p>
+                <p>
+                    Alue sopii erityisesti luonnosta,
+                    vaeltamisesta ja vuoristomaisemista
+                    kiinnostuneille matkailijoille.
+                </p>
+            </div>
+        </article>
+
+        <!-- Everglades -->
+        <article class="kohde-esittely" id="everglades">
+            <figure>
+                <img src="images/everglades.jpg" alt="Everglades" width="3456" height="2304" loading="lazy">
+            </figure>
+
+            <div class="kohde-teksti">
+                <h2>Everglades, USA</h2>
+                <p>
+                    Everglades sijaitsee Floridassa,
+                    Yhdysvalloissa. Alue tunnetaan
+                    kosteikoista ja monipuolisesta luonnosta.
+                </p>
+                <p>
+                    Kansallispuistossa voi nähdä esimerkiksi
+                    alligaattoreita ja erilaisia lintulajeja.
+                    Alueeseen voi tutustua luontoretkillä.
+                </p>
+            </div>
+        </article>
+
+    </main>
+
     <footer>
         <p>&copy; 2026 Eeli Erkkilä. Unelma matkat</p>
     </footer>
 </body>
+
 </html>

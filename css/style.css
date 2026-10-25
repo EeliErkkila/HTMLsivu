@@ -1,71 +1,134 @@
-/* Sivun perustyyli */
+/* /* Sivun perustyyli */
 body {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #222;
-  
 }
 
-/* Lisää tyylit otsikoille */
-h1,h2,h3{
-    font-family: Verdana, Arial,  sans-serif;
+/* Otsikot */
+h1,
+h2,
+h3 {
+    font-family: Verdana, Arial, sans-serif;
 }
 
-h2, h3 {
-    color:#315c4c;
+/* Otsikoiden värit */
+h2,
+h3 {
+    color: #315c4c;
 }
 
 /* Sivun yläosa */
 header {
     background-color: #315c4c;
     color: white;
-    text-align: left;
-    padding: 30px;
+    padding: 15px 30px;
+}
+
+/* Navigaation Flexbox-asettelu */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Lisää tyylit navigaatiolle */
-nav {
-    text-align: left;
-    margin-top: 25px;
+/* Sivuston logo */
+.logo {
+    display: inline-block;
+    text-decoration: none;
+}
+/* Logon kuvat */
+.logo img {
+    display: block;
+    width: 80px;
+    height: auto;
 }
 
-/* Lisää tyylit navigaation listalle */
-nav ul {
+/* Navigaation linkkilista */
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
 }
 
-/* Lisää tyylit navigaation listan elementeille */
-nav li {
-    margin: 5px 0;
-}
-
-/* Lisää tyylit navigaation linkeille */
-nav a {
+/* Navigaation linkit */
+.navbar ul a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Lisää tyylit navigaation linkkien hover-tilalle */
-nav a:hover {
-    text-decoration: underline;
+/* Navigaation linkkien hover-tila */
+.navbar ul a:hover {
+    color: #f2c078;
 }
 
-/* Lisää tyylit pääsisällölle */
+/* Sivujen pääsisältö */
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
 }
 
-/* Lisää tyylit artikkeleille */
-article {
+/* Tavalliset linkit */
+a {
+    color: #315c4c;
+    font-weight: bold;
+}
+
+/* Etusivun hero-osio */
+.hero {
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Hero-kuva */
+.hero-kuva {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+/* Hero-kuvan teksti */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 30px;
+}
+/* Hero-otsikko ja -teksti */
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+}
+/* Hero-teksti */
+.hero p {
+    font-size: 22px;
+    color: white;
+}
+
+/* Sisältöosiot */
+.matkakohteet,
+.suosikit {
     background-color: white;
     padding: 25px;
     border: 1px solid #cccccc;
@@ -73,28 +136,97 @@ article {
     margin-bottom: 30px;
 }
 
-/* Lisää tyylit osioille */
-section {
+/* Etusivun matkakohteiden Flexbox */
+.kohteet-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Etusivun matkakohdekortit */
+.kohde {
+    flex: 1 1 250px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 25px;
     border: 1px solid #cccccc;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
-/* Lisää tyylit linkeille */
-a {
-    color: #315c4c;
-    font-weight: bold;
+/* Korttien otsikot */
+.kohde h3 {
+    margin-top: 15px;
 }
 
-/* Lisää tyylit linkkien hover-tilalle */
-img {
+/* Korttien kuva-alue */
+.kohde figure {
+    margin: 0;
+}
+
+/* Korttien kuvat */
+.kohde img {
+    display: block;
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Korttien linkit */
+.kohde a {
+    margin-top: auto;
+}
+
+/* Kohdesivun Flexbox-asettelu */
+.kohde-esittely {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: white;
+    border: 1px solid #cccccc;
     border-radius: 10px;
 }
 
-/* Lisää tyylit footerille */
+/* Kohdesivun kuva-alue */
+.kohde-esittely figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+/* Kohdesivun kuvat */
+.kohde-esittely img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Kohdesivun tekstialue */
+.kohde-teksti {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Kohdesivun otsikot */
+.kohde-teksti h1,
+.kohde-teksti h2 {
+    color: #315c4c;
+    margin-top: 0;
+}
+
+/* Joka toinen kohde: kuva oikealle */
+.kohde-esittely:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Sivun alaosa */
 footer {
     background-color: #315c4c;
     color: white;
